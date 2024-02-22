@@ -87,6 +87,8 @@ function temCerteza() {
         //Atualiza a página ao fechar o alert
         location.reload();
       });
+    }else{
+      location.reload();
     }
   });
 }
