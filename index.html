@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clica ali...</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <button
+      class="purple"
+      onclick="document.getElementById('modal').showModal();"
+    >
+      Clique aqui :)
+    </button>
+
+    <dialog id="modal">
+      <div class="content">
+        <h2>Jackson, você aceita ser nosso professor regente?</h2>
+        <button class="green" onclick="yep();">SIM! :)</button>
+        <button
+          class="red"
+          onclick="temCerteza();"
+          onmouseover="nope();"
+          id="btnNao"
+        >
+          Não! :(
+        </button>
+      </div>
+    </dialog>
+  </body>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>

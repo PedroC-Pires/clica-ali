@@ -1,0 +1,132 @@
+/* Define a fonte padrão para todos os elementos.*/
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Estiliza o elemento HTML, definindo-o como um contêiner flexível
+   que centraliza seus itens horizontal e verticalmente. */
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estiliza botões */
+button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  background-color: #ffffff66; /* Cor de fundo com transparência */
+}
+
+/* Estiliza botões com a classe 'green' */
+.green {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #39bb74;
+  cursor: pointer;
+  transition: ease-out 0.5s; /* Efeito de transição suave */
+  border: 2px solid #39bb74;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #39bb74;
+  z-index: 2; /* Controla a ordem de empilhamento */
+}
+
+/* Estiliza botões 'green' quando o cursor está sobre eles */
+.green:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #39bb74;
+}
+
+/* Estiliza botões 'green' quando são clicados */
+.green:active {
+  transform: scale(0.9);
+}
+
+/* Estiliza botões com a classe 'red' (semelhante aos botões 'green') */
+.red {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #e74040;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #e74040;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #e74040;
+  z-index: 1;
+}
+
+/* Estiliza botões 'red' quando o cursor está sobre eles */
+.red:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #e74040;
+}
+
+/* Estiliza botões 'red' quando são clicados */
+.red:active {
+  transform: scale(0.9);
+}
+
+/* Estiliza botões com a classe 'purple' (semelhante aos botões 'green' e 'red') */
+.purple {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #6d32af;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #6d32af;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #6d32af;
+}
+
+/* Estiliza botões 'purple' quando o cursor está sobre eles */
+.purple:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #6d32af;
+}
+
+/* Estiliza botões 'purple' quando são clicados */
+.purple:active {
+  transform: scale(0.9);
+}
+
+/* Estiliza o elemento 'dialog' */
+dialog {
+  width: 600px;
+  height: 50%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 8px 8px 16px #bcbcbc, -8px -8px 16px #ffffff;
+}
+
+/* Estiliza o conteúdo dentro da div 'content' */
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
